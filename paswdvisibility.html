@@ -1,0 +1,34 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>pswd</title>
+  </head>
+  <body>
+  	<center>
+  		<input id="input" type="text" placeholder="name"><br>
+  		<input id="pswd" type="password" placeholder="pswd"><br>
+  		<button id="btn" onclick="demo()">Show</button>
+  	</center>
+  
+  <script type="text/javascript">
+  	function demo(){
+  		var passwd= document.getElementById("pswd")
+  		if(passwd.type=="password"){
+  			var pp = passwd.setAttribute("type","text")
+  			passwd.append(pp)
+  			document.getElementById("btn").innerHTML="Hide"
+
+  		}
+  		else{
+  			var pp = passwd.setAttribute("type","password")
+  			passwd.append(pp)
+  			document.getElementById("btn").innerHTML="Show"
+  		}
+
+  	}
+
+  </script>
+  </body>
+  </html>
